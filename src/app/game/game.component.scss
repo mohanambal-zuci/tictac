@@ -1,0 +1,135 @@
+.game-page {
+  padding-top: 70px;
+  width: 100%;
+  height: 640px;
+  font-weight: 600;
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 80%;
+    width: 400px;
+    height: 520px;
+    background-color: rgba(245, 245, 245, 0.836);
+    border-radius: 20px;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .container {
+    padding-bottom: 18px;
+    margin-top: 0px;
+    .card-style {
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 5px;
+      width: 100px;
+    }
+  }
+
+  .game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+    width: 60%;
+    max-width: 300px;
+    margin: auto;
+    justify-content: center;
+  }
+
+  .xotext {
+    font-size: larger;
+    color: white;
+    font-weight: 700;
+    background-color:rgb(228, 55, 93);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    width: 95px;
+    margin: auto;
+    border: none;
+    font-size: xx-large;
+    font-weight: 700;
+    font-family: cursive;
+
+  }
+  
+  .x-color {
+    color:rgba(251,185,15,255);
+  }
+
+  .o-color {
+    color:white;
+  }
+
+  .newgame{
+    border: none;
+    background-color: #f8b014;
+    border-radius: 5px;
+    height: 40px;
+  }
+
+  .restart{
+    height: 40px;
+    background-color:#fedde7 ;
+    border-radius: 8px;
+    border: 2px solid #f74e72;
+    width: 90px; 
+  }
+
+  .won-data {
+    color: white;
+    background-color: green;
+    width: 200px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 4%;
+    text-align: center;
+    padding: 5px;
+  }
+
+  .footer-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+    padding-top: 10px;
+    margin-bottom: 20px;
+
+    .btn {
+      margin-right: 20px;
+      width: 35%;
+    }
+  }
+}
+
+#one {
+  background-color:#fedde7;
+  text-align: center;
+ 
+}
+#two {
+  background-color: #f7ba35;
+  text-align: center;
+}
+
+#three {
+  background-color: #fedde7;
+  text-align: center;
+}
+
+@media (max-width: 576px) {
+  .game-board div {
+    height: 68px;
+    width: 50px;
+  }
+}

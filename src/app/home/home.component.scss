@@ -1,0 +1,27 @@
+.home-page {
+  .content-title {
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+  }
+  .content-message {
+    font-size: larger;
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+  }
+  .start-game {
+    width: 90px;
+    height: 40px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+   color: white;
+    font-weight: 600;
+    margin: 10px auto;
+    background-color:#f74e72;
+    border: none;
+  }
+}

@@ -1,0 +1,26 @@
+.player-detail2 {
+  
+    .player-name {
+      width: 80%;
+      max-width: 400px;
+      margin: 0 auto;
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color:#f74e72;
+      border: none;
+      color: white;
+      font-weight: 600;
+      margin-left: 35%;
+    }
+    .btn:hover{
+     background-color: rgb(218, 193, 68);
+    }
+  }
+  

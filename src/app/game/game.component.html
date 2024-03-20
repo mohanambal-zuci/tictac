@@ -1,0 +1,50 @@
+<div class="game-page">
+    <div class="content">
+        <div class="container">
+            <div class="d-flex justify-content-around mb-4 gap-3 playerDetails">
+                <div class="card-style" id="one">
+                    <div class="card-body">
+                        <h6 class="card-text">{{playerName}}</h6>
+                        <h6 class="card-text">{{xCount}}</h6>
+                    </div>
+                </div>
+
+                <div class="card-style" id="two">
+                    <div class="card-body">
+                        <h6 class="card-text">Draw </h6>
+                        <h6 class="card-text">{{drawCount}}</h6>
+                    </div>
+                </div>
+
+                <div class="card-style" id="three">
+                    <div class="card-body">
+                        <h6 class="card-text"> {{playerName2}} </h6>
+                        <h6 class="card-text">{{oCount}}</h6>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="game-board">
+                <div class="xotext" *ngFor="let cell of cells;let i=index"
+                    [ngClass]="{'x-color': cell === 'X', 'o-color': cell === 'O'}" (click)="move(i)">
+                    {{cell}}
+                </div>
+            </div>
+
+            <div *ngIf="playerWon" class="won-data">
+                Hurray ! {{winner}} won
+            </div>
+
+            <div *ngIf="drawWon" class="won-data">
+                Game Over! It's a Draw!
+            </div>
+
+            <div class="footer-button d-flex align-items-center justify-content-around">
+                <button (click)="newGame()" class="newgame btn-lg">New Game</button>
+                <button (click)="restart()" class="restart">Restart</button>
+            </div>
+            
+        </div>
+    </div>
+</div>
